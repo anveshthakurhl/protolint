@@ -9,7 +9,7 @@ service GreetingService {
 }
 
 message SayHelloRequest {
-  string name = 1;
+  string Name = 1;
 }
 
 message SayHelloResponse {
