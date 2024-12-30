@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package contracts.v1;
+
+option go_package = "github.com/anveshthakurhl/protolint/contracts/v1";
+
+service GreetingService {
+  rpc SayHello(SayHelloRequest) returns (SayHelloResponse) {}
+}
+
+message SayHelloRequest {
+  string name = 1;
+}
+
+message SayHelloResponse {
+  string message = 1;
+}
