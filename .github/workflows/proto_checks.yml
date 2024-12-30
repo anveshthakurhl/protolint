@@ -14,8 +14,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: bufbuild/buf-setup-action@v1
-      - uses: bufbuild/buf-lint-action@v1
-      - uses: bufbuild/buf-breaking-action@v1
-        with:
-          against: "https://github.com/anveshthakurhl/protolint.git#branch=main"
+      - uses: bufbuild/buf-action@v1

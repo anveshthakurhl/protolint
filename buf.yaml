@@ -4,9 +4,7 @@ build:
     - .
 lint:
   use:
-    - BASIC
-    - FILE_LOWER_SNAKE_CASE
-  service_suffix: SERVICE
+    - STANDARD
 breaking:
   use:
     - WIRE_JSON
